@@ -20,8 +20,8 @@ jobs:
     
         - name: Generate Pickles
           run: |
-            python evil-pickle.py linux linux-pickle.pkl
-            python evil-pickle.py windows windows-pickle.pkl
+            python evil-pickle.py linux /pkl/linux-pickle.pkl
+            python evil-pickle.py windows /pkl/windows-pickle.pkl
     
         - name: Commit and push changes
           run: |
